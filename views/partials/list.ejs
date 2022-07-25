@@ -1,0 +1,36 @@
+<ul>
+   
+
+        
+        <% if (Mascotas == false) { %>
+          <h2>There are not saved products yet</h1>
+        <%} else { %>
+
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Object</th>
+                <th scope="col">Price</th>
+                
+              </tr>
+            </thead>
+
+            <% Mascotas.forEach(function(Mascotas) { %>
+            <tbody>
+              <tr>
+                <th scope="row"><%= Mascotas.id %></th>
+                <td><%= Mascotas.title %></td>
+                <td>$<%= Mascotas.price %></td>
+
+            </tbody>
+            <% }); %>   
+          </table>
+          <% } %>
+
+
+
+
+   
+</ul>
+

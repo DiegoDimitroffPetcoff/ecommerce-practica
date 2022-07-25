@@ -1,0 +1,1 @@
+[{"title":"Lapiz","price":"100","id":1},{"title":"Computadora","price":"20000","id":2},{"title":"Manzana","price":"30","id":3}]
